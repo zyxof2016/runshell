@@ -122,7 +122,7 @@ public abstract class ProcessShell extends AbstractShell implements IShell {
             String arg = builder.toString();
             commands.add(arg);
         }
-        log.info("5.2 ProcessJob :组装后的命令为：{}", JSONObject.toJSONString(commands));
+        log.info("ProcessShell :组装后的命令为：{}", JSONObject.toJSONString(commands));
         return commands.toArray(new String[commands.size()]);
     }
 

@@ -13,6 +13,11 @@ public class HadoopShell extends Shell {
         shellContext.getProperties().setProperty(RuningShellKeys.SHELL_RUN_TYPE, "HadoopShell");
     }
 
+    public HadoopShell (ShellContext shellContext, String shell){
+        super(shellContext, shell);
+        shellContext.getProperties().setProperty(RuningShellKeys.SHELL_RUN_TYPE, "HadoopShell");
+    }
+
     @Override
     public Integer run() throws Exception {
         return super.run();
